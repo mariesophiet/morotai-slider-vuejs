@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Slider/>
+    <Slider :slides="slides" :delay="delay" :autoplay="autoplay" :loop="loop"/>
   </div>
 </template>
 
@@ -12,7 +12,29 @@ import Slide from "./components/Slide.vue";
 export default {
   name: "App",
   components: {
-    Slider
+    Slider,
+    Slide
+  },
+  data: function() {
+    return {
+      slides: [
+        {
+          text: "Slide 1",
+          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+1"
+        },
+        {
+          text: "Slide 2",
+          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+2"
+        },
+        {
+          text: "Slide 3",
+          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+3"
+        }
+      ],
+      delay: 5000,
+      autoplay: true,
+      loop: true
+    }
   }
 };
 </script>

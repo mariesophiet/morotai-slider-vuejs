@@ -5,6 +5,7 @@
     <navigation v-for="(slide, index) in slides" :key="slide.text">
         <button @click="currentComponent = index">{{ index + 1 }}</button>
     </navigation>
+    <button @click="next"> Next</button>
 </div>
 </template>
 <script>
@@ -16,26 +17,26 @@ export default {
   name: "Slider",
   data: function() {
     return {
-      slides: [
-        {
-          text: "Slide 1",
-          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+1"
-        },
-        {
-          text: "Slide 2",
-          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+2"
-        },
-        {
-          text: "Slide 3",
-          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+3"
-        }
-      ],
-      currentComponent: "0"
+      currentComponent: "0",
+      intervalID: ""
     };
   },
+  props: ["slides", "delay", "autoplay", "loop"],
   components: {
     Slide,
     Navigation
+  },
+  methods: {
+      next() {
+          if (this.currentComponent == this.$props.slides.length - 1) {
+              this.currentComponent = 0;
+          } else {
+              this.currentComponent++;
+          }
+      }
+  },
+  created: function() {
+      this.intervalID = setInterval(this.next, 500);
   }
 };
 </script>

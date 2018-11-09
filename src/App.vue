@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Slider/>
   </div>
 </template>
 
 <script>
+/*eslint-disable*/
+import Slider from "./components/Slider.vue";
+import Slide from "./components/Slide.vue";
+
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    Slider
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

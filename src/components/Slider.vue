@@ -36,7 +36,7 @@ export default {
       }
   },
   created: function() {
-      this.intervalID = setInterval(this.next, 500);
+      this.intervalID = setInterval(this.next, this.$props.delay);
   }
 };
 </script>

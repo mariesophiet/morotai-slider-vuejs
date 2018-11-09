@@ -27,16 +27,24 @@ export default {
     Navigation
   },
   methods: {
-      next() {
-          if (this.currentComponent == this.$props.slides.length - 1) {
-              this.currentComponent = 0;
-          } else {
-              this.currentComponent++;
-          }
+    next() {
+      if (this.$props.loop) {
+        if (this.currentComponent == this.$props.slides.length - 1) {
+          this.currentComponent = 0;
+        } else {
+          this.currentComponent++;
+        }
+      } else {
+        if (this.currentComponent < this.$props.slides.length - 1) {
+          this.currentComponent++;
+        }
       }
+    }
   },
   created: function() {
+    if (this.$props.autoplay) {
       this.intervalID = setInterval(this.next, this.$props.delay);
+    }
   }
 };
 </script>

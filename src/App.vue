@@ -29,6 +29,10 @@ export default {
         {
           text: "Slide 3",
           image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+3"
+        },
+        {
+          text: "Slide 4",
+          image: "https://dummyimage.com/500x400/000000/fff.jpg&text=Slide+4"
         }
       ],
       delay: 5000,

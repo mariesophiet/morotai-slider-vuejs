@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    body { 
+      margin: 30px 0px;
+      position: initial;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+    }
+    .container-medium {
+      padding-left: 0px;
+      margin-left: 200px;
+    }
+    .navbar-default .navbar-nav > li.dropdown:hover > a, 
+    .navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+    .navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+      color: rgb(78, 77, 77);
+      font-weight: 600;
+    }  
+    .navbar-default {
+      border: none;
+    }
+    li.dropdown:hover > .submenu {
+      display: block;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+      border-top: none;
+      border-right: 1px solid rgba(128, 128, 128, 0.39);
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .dropdown-menu {
+      display: block;
+      /*max-width: 960px;*/
+      margin: 0 auto;
+      width: 100%;
+      background-color: rgba(255 , 255, 255, 0.795);  
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: white;
+      position: inherit;
+    }
+    .navbar-nav {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .nav > li {
+      position: inherit;
+    }
+    th {
+      font-weight: 600;
+    }
+    .table > tbody > tr > td {
+      padding-top: 0.1px;
+    }
+    
+    .caret {
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a:hover, a:focus, a {
+      text-decoration: none;
+      color: rgb(78, 77, 77);
+    }
+    .submenu {
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+    }
+    .table {
+      width: 50%;
+      /*table-layout: fixed;*/
+      padding-left: 0;
+      display: block;
+      padding-top: 20px;
+    }
+    .container-fluid {
+      padding-left: 0; 
+    }
+    .table > tbody > tr > td {
+      line-height: 2;
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="container-medium">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+      
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Damen <b class="caret"></b></a>
+                  <div class="submenu">
+                  <div class="container-full">
+                  <ul class="dropdown-menu">
+                    <div class="container-medium">
+                        <table class="table">
+                            <tr>
+                              <th>Sportbekleidung</th>
+                              <th>Taschen</th>
+                              <th style="border: none">Accessoires</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                <ul style="padding: 0px">
+                                  <li>Tops & Shirts</li>
+                                  <li>Jacken</li>
+                                  <li>Sporthosen </li>
+                                  <li>Pullover & Sweater</li>
+                                  <li style>Röcke</li>
+                                </ul>  
+                              </td>
+                              <td>
+                                <ul style="padding: 0px">
+                                  <li>Caps</li>
+                                  <li> Taschen</li>
+                                </ul>
+                              </td> 
+                              <td style="border: none">
+                                <ul style="padding: 0px">
+                                  <li>Handschuhe</li>
+                                  <li>Socken</li>
+                                  <li>sbhfh<br> hhhhhhhhhhhhhhhh </li>
+                                </ul>
+                              </td>
+                        </table>
+                  
+                  </div>
+                  </ul>
+                  </div>
+                </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Herren<b class="caret"></b></a>
+                    <div class="submenu">
+                      <div class="container-full">
+                    <ul class="dropdown-menu">
+                      <div class="container-medium">
+                    <table class="table">
+                          <tr>
+                            <th>Sportbekleidung</th>
+                            <th>Taschen</th>
+                            <th style="border: none">Accessoires</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <ul style="padding: 0px">
+                                <li>Shirts</li>
+                                <li>Hosen</li>
+                                <li>sbhfh hhhhhhh </li>
+                              </ul>  
+                            </td>
+                            <td>
+                              <ul style="padding: 0px">
+                                <li>Caps</li>
+                                <li> Taschen</li>
+                              </ul>
+                            </td> 
+                            <td style="border: none">
+                              <ul style="padding: 0px">
+                                <li>Handschuhe</li>
+                                <li>Socken</li>
+                                <li>sbhfh<br> hhhhhhhhhhhhhhhh </li>
+                              </ul>
+                            </td>
+                      </table>
+                      </div>
+                      </ul>
+                      </div>
+
+                    </div>
+                      </li>
+                      <li><a href="#">Story</a></li> 
+                <li><a href="#">Styles</a></li> 
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+<div class="container">
+  <img src="https://dummyimage.com/800x800/000/fff">
+</div>
+</body>
+</html>

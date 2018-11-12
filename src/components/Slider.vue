@@ -1,6 +1,6 @@
 <template>
-<div classs="carousel">
-  <transition name="fade" mode="out-in">
+<div class="carousel">
+  <transition name="fade">
     <slide v-for="(slide, index) in slides" v-if="index == currentComponent" :key="index" :image="slide.image">
     </slide>
   </transition>
@@ -54,6 +54,12 @@ export default {
 </script>
 
 <style>
+.carousel {
+  position: relative;
+}
+.slide {
+  position: absolute;
+}
 .fade-enter {
   opacity: 0;
 }

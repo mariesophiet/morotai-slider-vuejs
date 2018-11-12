@@ -6,12 +6,14 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "Navigation",
+  name: "Navigation"
 };
 </script>
 <style>
 .navigation {
-    display: inline-block;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 

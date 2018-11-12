@@ -1,6 +1,6 @@
 <template>
 <div classs="carousel">
-  <transition>
+  <transition name="fade" mode="out-in">
     <slide v-for="(slide, index) in slides" v-if="index == currentComponent" :key="index" :image="slide.image">
     </slide>
   </transition>

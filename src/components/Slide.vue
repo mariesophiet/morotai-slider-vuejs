@@ -16,7 +16,7 @@ export default {
 <style>
 .slide {
   width: 50%;
-  display: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
 }

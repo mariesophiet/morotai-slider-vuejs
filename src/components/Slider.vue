@@ -1,11 +1,12 @@
 <template>
 <div classs="carousel">
+  <transition>
     <slide v-for="(slide, index) in slides" v-if="index == currentComponent" :key="index" :image="slide.image">
     </slide>
+  </transition>
     <navigation v-for="(slide, index) in slides" :key="slide.text">
-        <button @click="currentComponent = index">{{ index + 1 }}</button>
+        <button @click="currentComponent = index; clear();">{{ index + 1 }}</button>
     </navigation>
-    <button @click="next"> Next</button>
 </div>
 </template>
 <script>
@@ -39,6 +40,9 @@ export default {
           this.currentComponent++;
         }
       }
+    },
+    clear() {
+      clearInterval(this.intervalID);
     }
   },
   created: function() {
@@ -48,4 +52,21 @@ export default {
   }
 };
 </script>
+
+<style>
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 1s;
+}
+
+.fade-leave-active {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+
+</style>
 
